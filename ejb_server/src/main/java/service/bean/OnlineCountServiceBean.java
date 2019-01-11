@@ -1,8 +1,10 @@
 package service.bean;
 
+import dao.LoginDao;
 import model.UserList;
 import service.OnlineCountService;
 
+import javax.ejb.EJB;
 import javax.ejb.Stateless;
 
 @Stateless

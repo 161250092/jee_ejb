@@ -5,12 +5,13 @@ import dao.LoginDao;
 import model.UserList;
 import service.LoginManageService;
 
+import javax.ejb.EJB;
 import javax.ejb.Stateless;
 
 @Stateless
 
 public class LoginManageServiceBean implements LoginManageService{
-    LoginDao loginDao = DaoFactory.getLoginDao();
+    @EJB LoginDao loginDao ;
 
     public int Login_in(String user, String pw) {
 

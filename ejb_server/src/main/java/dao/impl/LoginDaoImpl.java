@@ -4,16 +4,15 @@ import dao.DaoHelper;
 import dao.LoginDao;
 import model.UserList;
 
+import javax.ejb.Stateless;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-
+@Stateless
 public class LoginDaoImpl implements LoginDao {
 
-    private static LoginDaoImpl loginDao = new LoginDaoImpl();
 
-    public static LoginDaoImpl getInstance(){return loginDao;}
 
     private static DaoHelper daoHelper=DaoHelperImpl.getBaseDaoInstance();
 

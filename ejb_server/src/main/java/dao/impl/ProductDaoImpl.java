@@ -4,17 +4,18 @@ import dao.DaoHelper;
 import dao.ProductDao;
 import model.Product;
 
+import javax.ejb.Stateless;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
-
+@Stateless
 public class ProductDaoImpl implements ProductDao {
 
-    private static ProductDaoImpl productOrder = new ProductDaoImpl();
-
-    public static ProductDaoImpl getInstance(){return productOrder;}
+//    private static ProductDaoImpl productOrder = new ProductDaoImpl();
+////
+////    public static ProductDaoImpl getInstance(){return productOrder;}
 
     private static DaoHelper daoHelper=DaoHelperImpl.getBaseDaoInstance();
     @Override

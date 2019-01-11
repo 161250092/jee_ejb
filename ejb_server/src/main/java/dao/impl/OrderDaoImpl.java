@@ -5,15 +5,16 @@ import dao.OrderDao;
 import model.Order;
 import model.ProductItem;
 
+import javax.ejb.Stateless;
 import java.sql.*;
 import java.time.LocalDate;
 import java.util.ArrayList;
-
+@Stateless
 public class OrderDaoImpl implements OrderDao {
 
-    private static OrderDaoImpl orderDao = new OrderDaoImpl();
-
-    public static OrderDaoImpl getInstance(){return orderDao;}
+//    private static OrderDaoImpl orderDao = new OrderDaoImpl();
+//
+//    public static OrderDaoImpl getInstance(){return orderDao;}
 
     private static DaoHelper daoHelper=DaoHelperImpl.getBaseDaoInstance();
 
