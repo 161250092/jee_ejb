@@ -9,7 +9,7 @@ import javax.ejb.Stateless;
 import java.sql.*;
 import java.time.LocalDate;
 import java.util.ArrayList;
-@Stateless
+
 public class OrderDaoImpl implements OrderDao {
 
 //    private static OrderDaoImpl orderDao = new OrderDaoImpl();
@@ -64,8 +64,8 @@ public class OrderDaoImpl implements OrderDao {
                 if(quantity>=repertory)
                     oos = true;
 
-                ProductItem item = new ProductItem(orderId,productId,productName,quantity,price,quantity*price,oos);
-                productList.add(item);
+             //   ProductItem item = new ProductItem(orderId,productId,productName,quantity,price,quantity*price,oos);
+             //   productList.add(item);
             }
             psmt.close();
             conn.close();

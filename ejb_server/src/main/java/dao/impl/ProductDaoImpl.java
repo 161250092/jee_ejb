@@ -10,7 +10,6 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
-@Stateless
 public class ProductDaoImpl implements ProductDao {
 
 //    private static ProductDaoImpl productOrder = new ProductDaoImpl();
